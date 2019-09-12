@@ -15,7 +15,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     var itemList: ArrayList<Item>? = null
-    val itemPrices = Array(3 ) { 5.0 - it }
+    val itemPrices = Array(3) { 5.0 - it }
     var couponApplied = false
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -28,17 +28,14 @@ class MainActivity : AppCompatActivity() {
         }
 
         showItems()
-
-
     }
 
-    fun addItem (name: String, weight: String) {
+    fun addItem(name: String, weight: String) {
         val item = Item()
         item.name = name
         item.weight = if (weight == "") 0 else parseInt(weight)
         itemList?.add(item)
     }
-
 
     fun showItems() {
 
@@ -48,55 +45,17 @@ class MainActivity : AppCompatActivity() {
         }
 
         info_textview.text = information
-
     }
 
+    fun getItemPrice: (Int) -> Double = { weight: Int ->
+        val discount = if (couponApplied) 0.9 else 1.0
+        var pr = 0.0
+        discount * when (weight) {
+            in 0..10 -> weight * itemPrices[0]
+            in 11..100 -> weight * itemPrices[1]
+            else -> weight * itemPrices[2]
+        }
+    }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//    fun showItem() {
-//        val getItemPrice: (Int) -> Double = {
-//            val discount = if (couponApplied) 0.9 else 0.1
-//            it * discount * when (it) {
-//                in 0..10 -> itemPrices[0]
-//                in 11..100 -> itemPrices[1]
-//                else -> itemPrices[2]
-//            }
-//        }
-//
-//        var sumWeight = 0
-//        var sumPrice = 0.0
-//
-//        itemList?.run {
-//            for (i in this) {
-//                sumPrice += getItemPrice(i.weight)
-//            }
-//            sumWeight = this.sumBy {
-//                it.weight
-//            }
-//        }
-//
-//        var information = "Total weight: ${sumWeight}, total price: ${sumPrice}"
-//
-//        itemList?.forEach {
-//            information += "name:${it.name}, weight:${it.weight}, " +
-//                    "price:${getItemPrice(it.weight)}\n"
-//        }
-//
-//        info_textview.text = information
-//    }
 
 }
