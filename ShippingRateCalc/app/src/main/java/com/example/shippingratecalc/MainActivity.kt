@@ -38,6 +38,15 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun showItems() {
+        var sumCost = 0.0
+        var sumWeight = 0
+        itemList?.run {
+            for (i in 0 until this.size){
+                sumCost += getItemPrice(this[i].weight)
+            }
+            sumWeight = this.sumBy { i -> i.weight }
+        }
+
 
         var information = ""
         itemList?.forEach {
@@ -45,14 +54,19 @@ class MainActivity : AppCompatActivity() {
         }
 
         info_textview.text = information
+
+
+
+
+
+
     }
 
-    fun getItemPrice: (Int) -> Double = { weight: Int ->
+    fun getItemPrice: (Int) -> Double = {
         val discount = if (couponApplied) 0.9 else 1.0
-        var pr = 0.0
         discount * when (weight) {
             in 0..10 -> weight * itemPrices[0]
-            in 11..100 -> weight * itemPrices[1]
+            in 11 until 100 -> weight * itemPrices[1]
             else -> weight * itemPrices[2]
         }
     }
