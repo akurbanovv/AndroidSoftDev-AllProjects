@@ -1,7 +1,5 @@
 package com.example.stockapp
 
-package com.example.stockapp
-
 import org.json.JSONArray
 
 class Stock(

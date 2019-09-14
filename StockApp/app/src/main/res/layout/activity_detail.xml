@@ -9,30 +9,32 @@
 
     <TextView
         android:id="@+id/name_text"
-        android:layout_width="1"
+        android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="match_parent"
+        android:layout_weight="1"
         android:text="Name"
         android:textSize="30dp" />
 
     <TextView
         android:id="@+id/price_text"
-        android:layout_weight="match_parent"
+        android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_width="5"
+        android:layout_weight="1"
         android:text="Price"
         android:textSize="25dp" />
+
     <TextView
         android:id="@+id/info_text"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="5"
-        android:text="Information" />
-    <TextView
-        android:layout_weight="3"
-        android:layout_height="0dp"
-        android:layout_width="match_parent"
-        android:src="@drawable/fake_stock_chart" />
+        android:text="Info"
+        android:textSize="20dp" />
 
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:src="@drawable/fake_stock_chart" />
 
 </LinearLayout>

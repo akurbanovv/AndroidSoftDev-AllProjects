@@ -13,22 +13,19 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             tech_button.id->"Information Technology"
             financial_button.id->"Financials"
             industrial_button.id->"Industrial"
-            healcare_button.id->"Health Care"
+            healthcare_button.id->"Health Care"
             else -> "Information Technology"
         }
-        intent.putExtra(name: "sector", sector)
+        intent.putExtra("sector", sector)
         startActivity(intent)
-
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
         tech_button.setOnClickListener(this)
         financial_button.setOnClickListener(this)
-        healcare_button.setOnClickListener(this)
-        // industrial_button
-
+        healthcare_button.setOnClickListener(this)
+        industrial_button.setOnClickListener(this)
     }
 }

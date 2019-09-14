@@ -14,11 +14,13 @@ import org.w3c.dom.Text
 
 class ListActivity : AppCompatActivity() {
 
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_list)
 
-        val sector = intent.getStringExtra(name: sector)
+        val sector = intent.getStringExtra("sector")
         val jsonString = resources.openRawResource(R.raw.sp500).bufferedReader().use { it.readText() }
         val stockArray = Stock.parseStockJson(jsonString)
         val stockToShow = stockArray.filter { it.sector == sector }.toTypedArray()
@@ -30,8 +32,8 @@ class ListActivity : AppCompatActivity() {
         stock_recyclerview.apply {
             this.layoutManager=viewManger
             this.adapter=viewAdapter
+            setHasFixedSize(true)
         }
-
     }
 
 
@@ -45,13 +47,16 @@ class ListActivity : AppCompatActivity() {
     lateinit var viewAdapter: RecyclerView.Adapter<*>
     lateinit var viewManger: RecyclerView.LayoutManager
 
+
+
+
      class RecyclerViewAdapter (
          val stockData:Array<Stock>,
          val cliclListener: (Stock) -> Unit
      ):RecyclerView.Adapter<RecyclerViewAdapter.RecyclerViewHolder>() {
          override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerViewHolder {
              val itemItem = LayoutInflater.from(parent.context).inflate(R.layout.stock_item, parent, false)
-             return RecyclerViewHolder(viewItem)
+             return RecyclerViewHolder(itemItem)
          }
 
          override fun getItemCount(): Int {
