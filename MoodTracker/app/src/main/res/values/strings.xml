@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">MoodTrack</string>
+    <string name="add">add</string>
+    <string-array name="moodItems">
+        <item>😆Excited</item>
+        <item>😁Happy</item>
+        <item>😶Neutral</item>
+        <item>😞Sad</item>
+        <item>😡Angry</item>
+    </string-array>
+</resources>

@@ -8,7 +8,6 @@ import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
 
-
     class Item {
         var name = ""
         var weight = 0
@@ -24,10 +23,18 @@ class MainActivity : AppCompatActivity() {
 
         add_button.setOnClickListener {
             addItem(item_name.text.toString(), item_weight.text.toString())
-            Log.d("test", "add button checked")
+            showItems()
         }
 
-        showItems()
+        coupon_checkbox.setOnCheckedChangeListener { compoundButton, b ->
+            couponApplied = b
+            showItems()
+        }
+
+        clear_button.setOnClickListener {
+            itemList?.clear()
+            showItems()
+        }
     }
 
     fun addItem(name: String, weight: String) {
@@ -38,38 +45,32 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun showItems() {
-        var sumCost = 0.0
-        var sumWeight = 0
-        itemList?.run {
-            for (i in 0 until this.size){
-                sumCost += getItemPrice(this[i].weight)
+        val getItemPrice: (Int) -> Double = {
+            val discount = if (couponApplied) 0.9 else 0.1
+            it * discount * when (it) {
+                in 0..10 -> itemPrices[0]
+                in 11..100 -> itemPrices[1]
+                else -> itemPrices[2]
             }
-            sumWeight = this.sumBy { i -> i.weight }
         }
 
+        var sumCost = 0.0
+        var sumWeight = 0
 
-        var information = ""
+        itemList?.run {
+            for (i in this){
+                sumCost += getItemPrice(i.weight)
+            }
+            sumWeight = this.sumBy {
+                it.weight }
+        }
+
+        var information = "Total weight $sumWeight   Total cost $sumCost\n"
+
         itemList?.forEach {
-            information += "item:${it.name}, weight: ${it.weight}lb"
+            information += "item:${it.name}, weight: ${it.weight}lb, rate: ${getItemPrice(it.weight)}\n"
         }
 
         info_textview.text = information
-
-
-
-
-
-
     }
-
-    fun getItemPrice: (Int) -> Double = {
-        val discount = if (couponApplied) 0.9 else 1.0
-        discount * when (weight) {
-            in 0..10 -> weight * itemPrices[0]
-            in 11 until 100 -> weight * itemPrices[1]
-            else -> weight * itemPrices[2]
-        }
-    }
-
-
 }
