@@ -8,7 +8,6 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.BaseAdapter
-import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.menu_item.view.*
 
@@ -163,6 +162,8 @@ class MainActivity : AppCompatActivity() {
 
             startActivity(intent)
         }
+
+
     }
 
 

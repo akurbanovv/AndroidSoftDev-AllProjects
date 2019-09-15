@@ -11,6 +11,8 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.synthetic.main.activity_summary.*
+import java.util.*
+import kotlin.collections.ArrayList
 
 class SummaryActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -37,14 +39,14 @@ class SummaryActivity : AppCompatActivity() {
             )
         }
 
-        var totalCals = 0
+        var totalCaloriess = 0
         val checkedItems = menuItemsChecked.filter { it.checked }
 
         checkedItems.forEach {
-            totalCals += it.cal.toInt()
+            totalCaloriess += it.cal.toInt()
         }
 
-        caloriessum_in_sum.text = totalCals.toString()
+        caloriesValue_text.text = totalCaloriess.toString()
 
         viewManager = LinearLayoutManager(this)
         viewAdapter = RecyclerViewAdapter(menuItemsChecked.filter { it.checked }.toTypedArray())
@@ -54,15 +56,26 @@ class SummaryActivity : AppCompatActivity() {
             this.adapter = viewAdapter
         }
 
+        var profile = Profile("male", "190 lb", "22", "6'11''")
+
+
 
         update_button.setOnClickListener {
             val intent = Intent(this, ConfScreen::class.java)
             startActivity(intent)
         }
+
+        genderValue_text.text = profile.gender
+        weightValue_text.text = profile.weight
+        ageValue_text.text = profile.age
+        heightValue_text.text = profile.height
     }
 
     lateinit var viewManager: RecyclerView.LayoutManager
     lateinit var viewAdapter: RecyclerView.Adapter<*>
+
+
+    // fun CalcBMR(Int: )
 
     class RecyclerViewAdapter(
         val menuData: Array<MenuItem>
