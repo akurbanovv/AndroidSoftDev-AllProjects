@@ -56,9 +56,9 @@ class SummaryActivity : AppCompatActivity() {
             this.adapter = viewAdapter
         }
 
-        var profile = Profile("male", "190 lb", "22", "6'11''")
 
-
+        var profile = Profile("male", 112, 21, 6, 1)
+        var bmr = CalcBMR(profile.gender, profile.weight, profile.age, profile.feet, profile.inches)
 
         update_button.setOnClickListener {
             val intent = Intent(this, ConfScreen::class.java)
@@ -66,16 +66,31 @@ class SummaryActivity : AppCompatActivity() {
         }
 
         genderValue_text.text = profile.gender
-        weightValue_text.text = profile.weight
-        ageValue_text.text = profile.age
-        heightValue_text.text = profile.height
+        weightValue_text.text = profile.weight.toString() + " lb"
+        ageValue_text.text = profile.age.toString()
+        heightValue_text.text = profile.feet.toString() + "' " + profile.inches.toString() + "''"
+
+        bmrValue_text.text = bmr.toString()
     }
 
     lateinit var viewManager: RecyclerView.LayoutManager
     lateinit var viewAdapter: RecyclerView.Adapter<*>
 
 
-    // fun CalcBMR(Int: )
+    fun CalcBMR(Gender: String, Weight: Int, Age: Int, Feet: Int, Inches: Int): Int {
+        var heightCm = (Feet + (Inches / 12.0)) * 30.48
+        var weightKg = Weight * 0.45359237
+
+        var bmr = 0.0
+
+        if (Gender.toLowerCase() == "male") {
+            bmr = 10.0 * weightKg + 6.25 * heightCm - 5.0 * Age.toDouble() + 5.0
+        } else if (Gender.toLowerCase() == "female") {
+            bmr = (10.0 * weightKg) + (6.25 * heightCm) - (5.0 * Age.toDouble()) - 161.0
+        }
+
+        return bmr.toInt()
+    }
 
     class RecyclerViewAdapter(
         val menuData: Array<MenuItem>

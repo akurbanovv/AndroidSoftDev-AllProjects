@@ -55,7 +55,7 @@
         android:layout_width="362dp"
         android:layout_height="45dp"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="24dp"
         android:text="You should eat xxx calories more/less"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -68,7 +68,7 @@
         android:layout_width="146dp"
         android:layout_height="27dp"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="20dp"
         android:text="Order calories:"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -77,11 +77,23 @@
         app:layout_constraintTop_toBottomOf="@+id/bmr_text" />
 
     <TextView
+        android:id="@+id/caloriesValue_text"
+        android:layout_width="78dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="20dp"
+        android:text="xxxx"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/suggestValue_text"
+        app:layout_constraintStart_toEndOf="@+id/calories_text"
+        app:layout_constraintTop_toBottomOf="@+id/weight_text"
+        app:layout_constraintVertical_bias="0.775" />
+
+    <TextView
         android:id="@+id/bmr_text"
         android:layout_width="142dp"
         android:layout_height="31dp"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="88dp"
+        android:layout_marginTop="104dp"
         android:text="Your daily BMR:"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -103,6 +115,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="136dp"
+        android:layout_marginTop="8dp"
         android:text="Weight:"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -110,9 +123,10 @@
 
     <TextView
         android:id="@+id/height_text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="59dp"
+        android:layout_height="26dp"
         android:layout_marginStart="76dp"
+        android:layout_marginTop="8dp"
         android:text="Height:"
         android:textSize="18sp"
         app:layout_constraintStart_toEndOf="@+id/weight_text"
@@ -120,9 +134,9 @@
 
     <TextView
         android:id="@+id/age_text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="72dp"
+        android:layout_width="44dp"
+        android:layout_height="23dp"
+        android:layout_marginStart="68dp"
         android:layout_marginTop="24dp"
         android:text="Age:"
         android:textSize="18sp"
@@ -133,55 +147,46 @@
         android:id="@+id/imageView"
         android:layout_width="76dp"
         android:layout_height="65dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/ic_person_black_24dp"
         app:layout_constraintEnd_toStartOf="@+id/gender_text"
-        app:layout_constraintHorizontal_bias="0.55"
+        app:layout_constraintHorizontal_bias="0.566"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/subtitle_text"
-        android:src="@drawable/ic_person_black_24dp" />
-
-    <TextView
-        android:id="@+id/caloriesValue_text"
-        android:layout_width="78dp"
-        android:layout_height="27dp"
-        android:layout_marginStart="12dp"
-        android:text="xxxx"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toTopOf="@+id/suggestValue_text"
-        app:layout_constraintStart_toEndOf="@+id/calories_text"
-        app:layout_constraintTop_toBottomOf="@+id/weight_text"
-        app:layout_constraintVertical_bias="0.84" />
+        app:layout_constraintTop_toBottomOf="@+id/subtitle_text" />
 
     <TextView
         android:id="@+id/genderValue_text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
+        android:layout_width="47dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="24dp"
         android:text="xxxx"
+        android:textSize="16sp"
         app:layout_constraintEnd_toStartOf="@+id/age_text"
-        app:layout_constraintHorizontal_bias="0.244"
+        app:layout_constraintHorizontal_bias="0.428"
         app:layout_constraintStart_toEndOf="@+id/gender_text"
         app:layout_constraintTop_toBottomOf="@+id/update_button" />
 
     <TextView
         android:id="@+id/weightValue_text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="52dp"
+        android:layout_width="43dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="56dp"
         android:text="xxx"
+        android:textSize="16sp"
         app:layout_constraintEnd_toStartOf="@+id/height_text"
-        app:layout_constraintHorizontal_bias="0.301"
+        app:layout_constraintHorizontal_bias="0.47"
         app:layout_constraintStart_toEndOf="@+id/weight_text"
         app:layout_constraintTop_toBottomOf="@+id/update_button" />
 
     <TextView
         android:id="@+id/ageValue_text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
+        android:layout_width="31dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="24dp"
         android:text="xx"
+        android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.341"
+        app:layout_constraintHorizontal_bias="0.077"
         app:layout_constraintStart_toEndOf="@+id/age_text"
         app:layout_constraintTop_toBottomOf="@+id/update_button" />
 
@@ -189,24 +194,25 @@
         android:id="@+id/heightValue_text"
         android:layout_width="54dp"
         android:layout_height="20dp"
-        android:layout_marginTop="4dp"
+        android:layout_marginTop="12dp"
         android:text="x' xx''"
+        android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.296"
+        app:layout_constraintHorizontal_bias="0.192"
         app:layout_constraintStart_toEndOf="@+id/height_text"
         app:layout_constraintTop_toBottomOf="@+id/ageValue_text" />
 
     <TextView
         android:id="@+id/bmrValue_text"
-        android:layout_width="35dp"
-        android:layout_height="20dp"
+        android:layout_width="92dp"
+        android:layout_height="32dp"
         android:text="xxxx"
         android:textSize="18sp"
         app:layout_constraintBottom_toTopOf="@+id/caloriesValue_text"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.076"
+        app:layout_constraintHorizontal_bias="0.091"
         app:layout_constraintStart_toEndOf="@+id/bmr_text"
         app:layout_constraintTop_toBottomOf="@+id/weightValue_text"
-        app:layout_constraintVertical_bias="0.568" />
+        app:layout_constraintVertical_bias="0.641" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
