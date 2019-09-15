@@ -11,7 +11,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.synthetic.main.activity_summary.*
-import java.util.*
+import java.io.Serializable
 import kotlin.collections.ArrayList
 
 class SummaryActivity : AppCompatActivity() {
@@ -59,9 +59,21 @@ class SummaryActivity : AppCompatActivity() {
 
         var profile = Profile("male", 112, 21, 6, 1)
         var bmr = CalcBMR(profile.gender, profile.weight, profile.age, profile.feet, profile.inches)
+        var caloriesPerDay = bmr - totalCaloriess
+        var suggestText = ""
+
+        if (caloriesPerDay > 0) {
+            suggestText = "You should eat $caloriesPerDay calories less"
+        } else {
+            suggestText = "You should eat " + (caloriesPerDay * (-1)) + " calories more"
+        }
 
         update_button.setOnClickListener {
-            val intent = Intent(this, ConfScreen::class.java)
+
+            val intent = Intent(this, ConfScreenActivity::class.java)
+            intent.putExtra("profile", profile as Serializable)
+
+
             startActivity(intent)
         }
 
@@ -71,6 +83,7 @@ class SummaryActivity : AppCompatActivity() {
         heightValue_text.text = profile.feet.toString() + "' " + profile.inches.toString() + "''"
 
         bmrValue_text.text = bmr.toString()
+        suggestValue_text.text = suggestText
     }
 
     lateinit var viewManager: RecyclerView.LayoutManager
@@ -91,6 +104,7 @@ class SummaryActivity : AppCompatActivity() {
 
         return bmr.toInt()
     }
+
 
     class RecyclerViewAdapter(
         val menuData: Array<MenuItem>
