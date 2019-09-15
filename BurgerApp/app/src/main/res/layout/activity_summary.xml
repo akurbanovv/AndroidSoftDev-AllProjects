@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/yourfood_text"
+        android:layout_width="366dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:text="Your Food"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/items_recyclerView"
+        android:layout_width="385dp"
+        android:layout_height="325dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/yourfood_text" />
+
+    <TextView
+        android:id="@+id/yourprf_text"
+        android:layout_width="143dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="20dp"
+        android:text="Your profile"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/update_button"
+        app:layout_constraintHorizontal_bias="0.203"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/items_recyclerView" />
+
+    <Button
+        android:id="@+id/update_button"
+        android:layout_width="150dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="36dp"
+        android:text="Update"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/items_recyclerView" />
+
+    <TextView
+        android:id="@+id/sug_info"
+        android:layout_width="362dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="12dp"
+        android:text="You should "
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calories_text" />
+
+    <TextView
+        android:id="@+id/calories_text"
+        android:layout_width="151dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:text="Order calories:"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bmr_text" />
+
+    <TextView
+        android:id="@+id/bmr_text"
+        android:layout_width="152dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="88dp"
+        android:text="Your daily BMR:"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/yourprf_text" />
+
+    <TextView
+        android:id="@+id/gender_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="136dp"
+        android:layout_marginTop="16dp"
+        android:text="Gender: "
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/yourprf_text" />
+
+    <TextView
+        android:id="@+id/weight_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="136dp"
+        android:text="Weight:"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gender_text" />
+
+    <TextView
+        android:id="@+id/height_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:text="Height:"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/weight_text"
+        app:layout_constraintTop_toBottomOf="@+id/age_text" />
+
+    <TextView
+        android:id="@+id/age_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="24dp"
+        android:text="Age:"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/gender_text"
+        app:layout_constraintTop_toBottomOf="@+id/update_button" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="76dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/gender_text"
+        app:layout_constraintHorizontal_bias="0.55"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/yourprf_text"
+        android:src="@drawable/ic_person_black_24dp" />
+
+    <TextView
+        android:id="@+id/caloriessum_in_sum"
+        android:layout_width="78dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="8dp"
+        android:text="TextView"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/sug_info"
+        app:layout_constraintStart_toEndOf="@+id/calories_text"
+        app:layout_constraintTop_toBottomOf="@+id/weight_text"
+        app:layout_constraintVertical_bias="0.841" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="male"
+        app:layout_constraintEnd_toStartOf="@+id/age_text"
+        app:layout_constraintHorizontal_bias="0.244"
+        app:layout_constraintStart_toEndOf="@+id/gender_text"
+        app:layout_constraintTop_toBottomOf="@+id/update_button" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:text="176"
+        app:layout_constraintEnd_toStartOf="@+id/height_text"
+        app:layout_constraintHorizontal_bias="0.321"
+        app:layout_constraintStart_toEndOf="@+id/weight_text"
+        app:layout_constraintTop_toBottomOf="@+id/update_button" />
+
+    <TextView
+        android:id="@+id/age_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="22"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.219"
+        app:layout_constraintStart_toEndOf="@+id/age_text"
+        app:layout_constraintTop_toBottomOf="@+id/update_button" />
+
+    <TextView
+        android:id="@+id/feet_text"
+        android:layout_width="12dp"
+        android:layout_height="17dp"
+        android:text="6"
+        tools:layout_editor_absoluteX="339dp"
+        tools:layout_editor_absoluteY="518dp" />
+
+    <TextView
+        android:id="@+id/inch_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1"
+        tools:layout_editor_absoluteX="367dp"
+        tools:layout_editor_absoluteY="518dp" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/caloriessum_in_sum"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.043"
+        app:layout_constraintStart_toEndOf="@+id/bmr_text"
+        app:layout_constraintTop_toBottomOf="@+id/textView10"
+        app:layout_constraintVertical_bias="0.769" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
