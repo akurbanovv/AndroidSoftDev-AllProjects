@@ -10,6 +10,7 @@ import android.view.ViewGroup
 import android.widget.BaseAdapter
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.menu_item.view.*
+import java.io.Serializable
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -155,7 +156,9 @@ class MainActivity : AppCompatActivity() {
                 }
             }
 
+            var profile = Profile("male", 112, 21, 6, 1)
             val intent = Intent(this, SummaryActivity::class.java)
+            intent.putExtra("profile", profile as Serializable)
             intent.putExtra("itemsNames",itemNamesToPass)
             intent.putExtra("itemsCalories", itemCaloriesToPass)
             intent.putExtra("itemsImages", itemImagesToPass)
