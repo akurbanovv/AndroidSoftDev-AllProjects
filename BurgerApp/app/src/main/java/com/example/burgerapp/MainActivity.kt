@@ -156,6 +156,8 @@ class MainActivity : AppCompatActivity() {
                 }
             }
 
+            // menuItems.filter { it.checked }
+            
             var profile = Profile("male", 112, 21, 6, 1)
             val intent = Intent(this, SummaryActivity::class.java)
             intent.putExtra("profile", profile as Serializable)

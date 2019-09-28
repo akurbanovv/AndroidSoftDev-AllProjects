@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/screens"
+    app:startDestination="@id/day">
+
+    <fragment
+        android:id="@+id/hero"
+        android:name="com.example.superhero.hero"
+        android:label="fragment_hero"
+        tools:layout="@layout/fragment_hero" >
+        <action
+            android:id="@+id/action_hero_to_picture"
+            app:destination="@id/picture" />
+    </fragment>
+    <fragment
+        android:id="@+id/day"
+        android:name="com.example.superhero.day"
+        android:label="day_fragment"
+        tools:layout="@layout/day_fragment" >
+        <action
+            android:id="@+id/action_day_to_hero"
+            app:destination="@id/hero" />
+    </fragment>
+    <fragment
+        android:id="@+id/picture"
+        android:name="com.example.superhero.picture"
+        android:label="picture_fragment"
+        tools:layout="@layout/picture_fragment" />
+</navigation>

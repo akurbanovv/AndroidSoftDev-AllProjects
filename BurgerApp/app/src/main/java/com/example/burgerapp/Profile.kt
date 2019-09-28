@@ -10,7 +10,6 @@ class Profile(
     var inches: Int
 ) : Serializable
 
-    fun UpdateAge(test: String){}
 
 
 
