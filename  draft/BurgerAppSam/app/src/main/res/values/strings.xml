@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">BurgerApp</string>
+    <string name="calculate_calories">Calculate Calories</string>
+</resources>

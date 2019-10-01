@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="60dp"
+    android:layout_marginRight="60dp"
+    android:layout_marginTop="100dp"
+    android:layout_marginBottom="100dp"
+    tools:context=".HomeFragment">
+
+    <LinearLayout
+        android:layout_width="120dp"
+        android:layout_height="230dp"
+        android:orientation="vertical"
+        android:layout_gravity="top|left">
+
+        <ImageButton
+            android:id="@+id/all_button"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:src="@drawable/all" />
+
+        <TextView
+            android:id="@+id/all_textView"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="center_vertical"
+            android:text="All Restaurants"
+            android:textSize="16dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="120dp"
+        android:layout_height="230dp"
+        android:orientation="vertical"
+        android:layout_gravity="top|right">
+
+        <ImageButton
+            android:id="@+id/style_button"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:src="@drawable/style" />
+
+        <TextView
+            android:id="@+id/style_textView"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="center_vertical"
+            android:text="Style"
+            android:textAlignment="center"
+            android:textSize="16dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="120dp"
+        android:layout_height="230dp"
+        android:orientation="vertical"
+        android:layout_gravity="bottom|left">
+
+        <ImageButton
+            android:id="@+id/food_button"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:src="@drawable/style" />
+
+        <TextView
+            android:id="@+id/food_textView"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="center_vertical"
+            android:text="Food"
+            android:textAlignment="center"
+            android:textSize="16dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="120dp"
+        android:layout_height="230dp"
+        android:orientation="vertical"
+        android:layout_gravity="bottom|right">
+
+        <ImageButton
+            android:id="@+id/random_button"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:src="@drawable/random" />
+
+        <TextView
+            android:id="@+id/random_textView"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="center_vertical"
+            android:text="Lucky Draw"
+            android:textAlignment="center"
+            android:textSize="16dp" />
+
+    </LinearLayout>
+
+
+
+
+
+</FrameLayout>

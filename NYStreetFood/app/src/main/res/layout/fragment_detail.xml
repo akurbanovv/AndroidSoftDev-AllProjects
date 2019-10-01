@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailFragment">
+
+    <ImageView
+        android:id="@+id/subind_image"
+        android:layout_width="match_parent"
+        android:layout_height="155dp"
+        android:layout_marginTop="30dp"
+        tools:src="@tools:sample/avatars" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:gravity="fill"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/name_text"
+            android:layout_width="match_parent"
+            android:layout_height="76dp"
+            android:layout_marginTop="160dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:text="Name of rest"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/subind_text"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:text="Type (Bar / Cafe)"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/subsubind_text"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="2dp"
+            android:gravity="fill"
+            android:paddingLeft="20dp"
+            android:text="Style (Asian)"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/phone_text"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="2dp"
+            android:autoLink="phone"
+            android:gravity="fill"
+            android:paddingLeft="20dp"
+            android:text="Phone number"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/website_text"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="2dp"
+            android:autoLink="web"
+            android:gravity="fill"
+            android:paddingLeft="20dp"
+            android:text="Website"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/address_text"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="2dp"
+            android:layout_weight="1"
+            android:gravity="fill"
+            android:paddingLeft="20dp"
+            android:text="Address Street"
+            android:textSize="16sp" />
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp" />
+
+    </LinearLayout>
+</FrameLayout>

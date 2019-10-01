@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/actionFavorite"
+        android:title="Favorites"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/actionHome"
+        android:title="Home"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/actionStyle"
+        android:title="Style"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/actionFood"
+        android:title="Food"
+        app:showAsAction="never" />
+
+</menu>

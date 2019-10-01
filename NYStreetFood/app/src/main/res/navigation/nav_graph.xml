@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeScreen">
+
+    <fragment
+        android:id="@+id/homeScreen"
+        android:name="com.example.nystreetfood.HomeFragment"
+        android:label="NewYork Food"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeScreen_to_listScreen"
+            app:destination="@id/listScreen" />
+        <action
+            android:id="@+id/action_homeScreen_to_styleCategoryScreen"
+            app:destination="@id/styleCategoryScreen" />
+        <action
+            android:id="@+id/action_homeScreen_to_foodCategoryScreen"
+            app:destination="@id/foodCategoryScreen" />
+        <action
+            android:id="@+id/action_homeScreen_to_detailScreen"
+            app:destination="@id/detailScreen" />
+        <action
+            android:id="@+id/action_homeScreen_to_savedRestaurantScreen"
+            app:destination="@id/savedRestaurantScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/listScreen"
+        android:name="com.example.nystreetfood.ListFragment"
+        android:label="Restaurant list"
+        tools:layout="@layout/fragment_list">
+        <action
+            android:id="@+id/action_listScreen_to_detailScreen"
+            app:destination="@id/detailScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/styleCategoryScreen"
+        android:name="com.example.nystreetfood.StyleFragment"
+        android:label="Food Category"
+        tools:layout="@layout/fragment_style">
+        <action
+            android:id="@+id/action_styleCategoryScreen_to_listScreen"
+            app:destination="@id/listScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/foodCategoryScreen"
+        android:name="com.example.nystreetfood.CategoryFragment"
+        android:label="Food Style"
+        tools:layout="@layout/fragment_category">
+        <action
+            android:id="@+id/action_foodCategoryScreen_to_listScreen"
+            app:destination="@id/listScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/savedRestaurantScreen"
+        android:name="com.example.nystreetfood.FavouritesFragment"
+        android:label="Favorites"
+        tools:layout="@layout/fragment_favourites">
+        <action
+            android:id="@+id/action_savedRestaurantScreen_to_detailScreen"
+            app:destination="@id/detailScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailScreen"
+        android:name="com.example.nystreetfood.DetailFragment"
+        android:label="Restaurant Details"
+        tools:layout="@layout/fragment_detail" />
+    <action
+        android:id="@+id/action_global_homeScreen"
+        app:destination="@+id/homeScreen" />
+    <action
+        android:id="@+id/action_global_savedRestaurantScreen"
+        app:destination="@id/savedRestaurantScreen" />
+    <action
+        android:id="@+id/action_global_foodCategoryScreen"
+        app:destination="@id/foodCategoryScreen" />
+    <action
+        android:id="@+id/action_global_styleCategoryScreen"
+        app:destination="@id/styleCategoryScreen" />
+</navigation>
