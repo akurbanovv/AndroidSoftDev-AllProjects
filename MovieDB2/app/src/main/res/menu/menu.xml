@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:icon="@drawable/ic_menu_black_24dp"
+        android:title="Menu"
+        app:showAsAction="always">
+        <menu>
+            <item
+                android:id="@+id/nowPlaying_item"
+                android:title="Now Playing"
+                app:showAsAction="never" />
+            <item
+                android:id="@+id/upComing_item"
+                android:title="Upcoming"
+                app:showAsAction="never" />
+
+            <item
+                android:id="@+id/saved_item"
+                android:title="Saved"
+                app:showAsAction="never" />
+
+        </menu>
+    </item>
+
+</menu>

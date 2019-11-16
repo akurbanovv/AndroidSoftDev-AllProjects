@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "721793748434",
+    "firebase_url": "https://drumapp-56166.firebaseio.com",
+    "project_id": "drumapp-56166",
+    "storage_bucket": "drumapp-56166.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:721793748434:android:663b7cd2bb20ed93a44c0b",
+        "android_client_info": {
+          "package_name": "com.example.drumapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "721793748434-uulmscofiu4op82bh2sjnc8gc550gusm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDh21CSNKoxAA09mR9kBobqejJ-mv-xdhk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "721793748434-uulmscofiu4op82bh2sjnc8gc550gusm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

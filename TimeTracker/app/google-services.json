@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "2207764601",
+    "firebase_url": "https://timetrackerlab.firebaseio.com",
+    "project_id": "timetrackerlab",
+    "storage_bucket": "timetrackerlab.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:2207764601:android:851ab0f10b06677aa144a8",
+        "android_client_info": {
+          "package_name": "com.example.csi210.timetracker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "2207764601-fupnvp4e5b9tqn3pl5c3u635i7gl0glq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDmNiVLcY4lnjhc1B__Daz1KS_1hEuxVO8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "2207764601-fupnvp4e5b9tqn3pl5c3u635i7gl0glq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

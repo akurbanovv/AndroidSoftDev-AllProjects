@@ -24,7 +24,9 @@ class CategoryFragment : Fragment() {
         return inflater.inflate(R.layout.fragment_category, container, false)
     }
 
+
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+
         addCategories()
 
         viewManager = LinearLayoutManager(context)

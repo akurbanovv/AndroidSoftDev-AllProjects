@@ -1,2 +1,0 @@
-include ':app', ':opencsv-4.6'
-rootProject.name='StreetFoodApp'

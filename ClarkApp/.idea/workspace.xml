@@ -1,0 +1,558 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AndroidLayouts">
+    <shared>
+      <config />
+    </shared>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="55273120-996a-4308-a925-893da2d98a86" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../AnimButtons/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AnimButtons/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AnimButtons/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AnimButtons/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AnimButtons/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AnimButtons/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AnimButtons/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AnimButtons/app/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AnimButtons/app/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AnimButtons/app/proguard-rules.pro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AnimButtons/app/src/androidTest/java/com/example/animbuttons/ExampleInstrumentedTest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AnimButtons/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AnimButtons/app/src/main/java/com/example/animbuttons/BlueFragment.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AnimButtons/app/src/main/java/com/example/animbuttons/GreenFragment.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AnimButtons/app/src/main/java/com/example/animbuttons/MainActivity.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AnimButtons/app/src/main/java/com/example/animbuttons/MainFragment.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AnimButtons/app/src/main/java/com/example/animbuttons/RedFragment.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AnimButtons/app/src/main/java/com/example/animbuttons/YellowFragment.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AnimButtons/app/src/main/res/animator/fly_down.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AnimButtons/app/src/main/res/animator/fly_left.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AnimButtons/app/src/main/res/animator/fly_right.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AnimButtons/app/src/main/res/animator/fly_up.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AnimButtons/app/src/main/res/animator/slide_in_down.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AnimButtons/app/src/main/res/animator/slide_in_left.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AnimButtons/app/src/main/res/animator/slide_in_right.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AnimButtons/app/src/main/res/animator/slide_in_up.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AnimButtons/app/src/main/res/animator/slide_out_down.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AnimButtons/app/src/main/res/animator/slide_out_left.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AnimButtons/app/src/main/res/animator/slide_out_right.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AnimButtons/app/src/main/res/animator/slide_out_up.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AnimButtons/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AnimButtons/app/src/main/res/drawable/arrow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AnimButtons/app/src/main/res/drawable/ic_launcher_background.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AnimButtons/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AnimButtons/app/src/main/res/layout/fragment_blue.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AnimButtons/app/src/main/res/layout/fragment_green.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AnimButtons/app/src/main/res/layout/fragment_main.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AnimButtons/app/src/main/res/layout/fragment_red.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AnimButtons/app/src/main/res/layout/fragment_yellow.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AnimButtons/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AnimButtons/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AnimButtons/app/src/main/res/mipmap-hdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AnimButtons/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AnimButtons/app/src/main/res/mipmap-mdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AnimButtons/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AnimButtons/app/src/main/res/mipmap-xhdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AnimButtons/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AnimButtons/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AnimButtons/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AnimButtons/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AnimButtons/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AnimButtons/app/src/main/res/navigation/nav.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AnimButtons/app/src/main/res/values/colors.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AnimButtons/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AnimButtons/app/src/main/res/values/styles.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AnimButtons/app/src/test/java/com/example/animbuttons/ExampleUnitTest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AnimButtons/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AnimButtons/gradle.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AnimButtons/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AnimButtons/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AnimButtons/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AnimButtons/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AnimButtons/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/clarkapp/CoursesFragment.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/clarkapp/EventsFragment.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/clarkapp/FeedbackFragment.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/clarkapp/HelpFragment.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/clarkapp/HoursFragment.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/clarkapp/LibraryFragment.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/clarkapp/MapFragment.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/clarkapp/MenuFragment.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/clarkapp/NewsFragment.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/clarkapp/ResourcesFragment.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-v24/booksicon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-v24/cal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-v24/eventsicon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-v24/feedbackicon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-v24/helpicon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-v24/logo1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-v24/logo2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-v24/logo3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-v24/map.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-v24/mapicon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-v24/news.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-v24/recoursesicon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/logo.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/mapscreen.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/newsicon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/res.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/searchiconmap.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/timeicon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_courses.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_events.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_feedback.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_help.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_hours.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_library.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_map.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_menu.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_news.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_resources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_event.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_recource.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/navigation/nav.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DrumApp/app/src/main/java/com/example/drumapp/DrumFragment.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DrumApp/app/src/main/java/com/example/drumapp/HomeFragment.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DrumApp/app/src/main/java/com/example/drumapp/RecordFragment.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DrumApp/app/src/main/res/layout-land/activity_main.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DrumApp/app/src/main/res/layout/fragment_drum.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DrumApp/app/src/main/res/layout/fragment_home.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DrumApp/app/src/main/res/layout/fragment_record.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DrumApp/app/src/main/res/navigation-land/nav.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MessageApp/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PokemonApp/app/src/main/java/com/example/pokemonapp/GPSManager.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PokemonApp/app/src/main/java/com/example/pokemonapp/MotionController.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PokemonApp/app/src/main/java/com/example/pokemonapp/Pokemon.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PokemonApp/app/src/main/java/com/example/pokemonapp/PokemonViewModel.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PokemonApp/app/src/main/res/drawable/magicarp.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PokemonApp/app/src/main/res/drawable/pikachu.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PokemonApp/app/src/main/res/drawable/squirtle.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PokemonApp/app/src/main/res/raw/magicarp.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PokemonApp/app/src/main/res/raw/pikachu.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PokemonApp/app/src/main/res/raw/resource.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PokemonApp/app/src/main/res/raw/squirtle.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MarioApp/app/src/main/java/com/example/marioapp/MarioViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../MarioApp/app/src/main/java/com/example/marioapp/MarioViewModel.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MarioApp/app/src/main/java/com/example/marioapp/Worker.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../MarioApp/app/src/main/java/com/example/marioapp/Worker.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MessageApp/app/google-services.json" beforeDir="false" afterPath="$PROJECT_DIR$/../MessageApp/app/google-services.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MessageApp/app/src/main/java/com/example/messageapp/User.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../MessageApp/app/src/main/java/com/example/messageapp/User.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MovieDB2/app/src/main/java/com/example/moviedb1/MovieDAO.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../MovieDB2/app/src/main/java/com/example/moviedb1/MovieDAO.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MovieDB2/app/src/main/java/com/example/moviedb1/MovieDB.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../MovieDB2/app/src/main/java/com/example/moviedb1/MovieDB.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MovieDP/app/src/main/java/com/example/moviedp/Movie.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MovieDP/app/src/main/java/com/example/moviedp/detailScreen.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MovieDP/app/src/main/java/com/example/moviedp/nowPlayingScreen.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MovieDP/app/src/main/java/com/example/moviedp/reviewScreen.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MovieDP/app/src/main/java/com/example/moviedp/upcomingScreen.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MovieDP/app/src/main/res/layout/fragment_detail_screen.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MovieDP/app/src/main/res/layout/fragment_list.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MovieDP/app/src/main/res/layout/fragment_now_playing_screen.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MovieDP/app/src/main/res/layout/fragment_review_screen.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MovieDP/app/src/main/res/layout/fragment_upcoming_screen.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MovieDP/app/src/main/res/layout/item_movie.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MovieDP/app/src/main/res/navigation/nav_graph.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MovieDP/app/src/main/res/raw/genre.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MovieDP/app/src/main/res/raw/now_playing.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MovieDP/app/src/main/res/raw/upcoming.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NYStreetFood/app/src/main/java/com/example/nystreetfood/CategoryFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../NYStreetFood/app/src/main/java/com/example/nystreetfood/CategoryFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NYStreetFood/app/src/main/res/layout/fragment_style.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../NYStreetFood/app/src/main/res/layout/fragment_style.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RegisterDemo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../RegisterDemo/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RegisterDemoN/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RegisterDemoN/.idea/codeStyles/Project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RegisterDemoN/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RegisterDemoN/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RegisterDemoN/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RegisterDemoN/.idea/runConfigurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RegisterDemoN/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RegisterDemoN/app/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RegisterDemoN/app/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RegisterDemoN/app/proguard-rules.pro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RegisterDemoN/app/src/androidTest/java/com/example/registerdemon/ExampleInstrumentedTest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RegisterDemoN/app/src/main/AndroidManifest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RegisterDemoN/app/src/main/java/com/example/registerdemon/CredentialFragment.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RegisterDemoN/app/src/main/java/com/example/registerdemon/InformationFragment.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RegisterDemoN/app/src/main/java/com/example/registerdemon/MainActivity.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RegisterDemoN/app/src/main/java/com/example/registerdemon/ProfileFragment.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RegisterDemoN/app/src/main/java/com/example/registerdemon/WelcomeFragment.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RegisterDemoN/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RegisterDemoN/app/src/main/res/drawable/ic_launcher_background.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RegisterDemoN/app/src/main/res/layout/activity_main.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RegisterDemoN/app/src/main/res/layout/fragment_credential.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RegisterDemoN/app/src/main/res/layout/fragment_information.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RegisterDemoN/app/src/main/res/layout/fragment_profile.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RegisterDemoN/app/src/main/res/layout/fragment_welcome.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RegisterDemoN/app/src/main/res/menu/toolbar_menu.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RegisterDemoN/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RegisterDemoN/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RegisterDemoN/app/src/main/res/mipmap-hdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RegisterDemoN/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RegisterDemoN/app/src/main/res/mipmap-mdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RegisterDemoN/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RegisterDemoN/app/src/main/res/mipmap-xhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RegisterDemoN/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RegisterDemoN/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RegisterDemoN/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RegisterDemoN/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RegisterDemoN/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RegisterDemoN/app/src/main/res/navigation/nav_graph.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RegisterDemoN/app/src/main/res/values/colors.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RegisterDemoN/app/src/main/res/values/strings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RegisterDemoN/app/src/main/res/values/styles.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RegisterDemoN/app/src/test/java/com/example/registerdemon/ExampleUnitTest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RegisterDemoN/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RegisterDemoN/gradle.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RegisterDemoN/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RegisterDemoN/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RegisterDemoN/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RegisterDemoN/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RegisterDemoN/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../StreetFoodApp/.idea/workspace.xml" beforeDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="R58M80EZYDD" />
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view />
+      </state>
+    </system>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="navigationResourceFile" />
+        <option value="layoutResourceFile_vertical" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_manu.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_courses.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/item_event.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_events.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_news.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_help.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_map.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_resources.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/item_recource.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_hours.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_library.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_menu.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/clarkapp/MainActivity.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/clarkapp/MenuFragment.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/res/navigation/nav.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_feedback.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectConfigurationFiles">
+    <option name="files">
+      <list>
+        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
+        <option value="$PROJECT_DIR$/.idea/gradle.xml" />
+        <option value="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="width" value="1920" />
+    <option name="height" value="1200" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="AndroidView" />
+      <pane id="ProjectPane" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DeviceAndSnapshotComboBoxAction.selectedDevice" value="R58M80EZYDD" />
+    <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2019-11-16T01:02:53.321Z" />
+    <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/res/drawable-v24" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/res/drawable-v24" />
+    <property name="not.eligible.for.single.variant.sync" value="true" />
+    <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/src/main/res/drawable-v24" />
+      <recent name="$PROJECT_DIR$/app/src/main/res/drawable" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/src/main/res/drawable" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
+      <module name="app" />
+      <option name="DEPLOY" value="true" />
+      <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
+      <option name="DEPLOY_AS_INSTANT" value="false" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="DEBUGGER_TYPE" value="Auto" />
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Hybrid>
+      <Java />
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Native>
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Sample Java Methods" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="55273120-996a-4308-a925-893da2d98a86" name="Default Changelist" comment="" />
+      <created>1573685529173</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1573685529173</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="0" width="1920" height="1200" extended-state="0" />
+    <layout>
+      <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.16240682" />
+      <window_info id="Structure" order="2" side_tool="true" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info id="Build Variants" order="4" side_tool="true" />
+      <window_info id="Image Layers" order="5" />
+      <window_info id="Designer" order="6" />
+      <window_info id="Resources Explorer" order="7" />
+      <window_info id="Capture Tool" order="8" />
+      <window_info anchor="bottom" id="Run" order="0" />
+      <window_info anchor="bottom" id="Logcat" order="1" />
+      <window_info anchor="bottom" id="TODO" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" />
+      <window_info anchor="bottom" id="Terminal" order="4" />
+      <window_info anchor="bottom" id="Event Log" order="5" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="6" />
+      <window_info anchor="bottom" id="Build" order="7" visible="true" weight="0.31946903" />
+      <window_info anchor="bottom" id="Android Profiler" order="8" />
+      <window_info anchor="right" id="Device File Explorer" order="0" side_tool="true" />
+      <window_info anchor="right" id="Capture Analysis" order="1" />
+      <window_info anchor="right" id="Gradle" order="2" />
+      <window_info anchor="right" id="Theme Preview" order="3" />
+      <window_info anchor="right" id="Preview" order="4" weight="0.32960597" />
+      <window_info anchor="right" id="Palette&#9;" order="5" />
+    </layout>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/_CU_Horiz_Red_60-75_LG_v4.png" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/logo.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable-v24/_CU_Horiz_Blk2_LG-v4.png" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/_CU_Horiz_Blk2_LG-v4.png" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/icons8-tear_off_calendar.png" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_recourses.xml" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_help.xml">
+      <provider selected="true" editor-type-id="android-designer2" />
+      <provider editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/clarkapp/MapFragment.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/clarkapp/EventViewFragment.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="12" column="6" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/clarkapp/EventsFragment.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/clarkapp/MainActivity.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/clarkapp/MenuFragment.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="237">
+          <caret line="29" column="9" selection-start-line="29" selection-start-column="9" selection-end-line="29" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="38" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/clarkapp/HelpFragment.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="12" column="6" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/navigation/nav.xml">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="12" column="9" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="nav-designer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_feedback.xml">
+      <provider selected="true" editor-type-id="android-designer2" />
+      <provider editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_events.xml">
+      <provider selected="true" editor-type-id="android-designer2" />
+      <provider editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_courses.xml">
+      <provider selected="true" editor-type-id="android-designer2" />
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="2" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_hours.xml">
+      <provider selected="true" editor-type-id="android-designer2" />
+      <provider editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_library.xml">
+      <provider selected="true" editor-type-id="android-designer2" />
+      <provider editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_map.xml">
+      <provider selected="true" editor-type-id="android-designer2" />
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="825">
+          <caret line="55" selection-start-line="55" selection-end-line="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_menu.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="470">
+          <caret line="32" column="8" selection-start-line="32" selection-start-column="8" selection-end-line="32" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_news.xml">
+      <provider selected="true" editor-type-id="android-designer2" />
+      <provider editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_resources.xml">
+      <provider selected="true" editor-type-id="android-designer2" />
+      <provider editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/item_event.xml">
+      <provider selected="true" editor-type-id="android-designer2" />
+      <provider editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/item_recource.xml">
+      <provider selected="true" editor-type-id="android-designer2" />
+      <provider editor-type-id="text-editor" />
+    </entry>
+  </component>
+</project>

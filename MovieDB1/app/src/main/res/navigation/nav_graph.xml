@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/nowPlaying">
+    <fragment
+        android:id="@+id/nowPlaying"
+        android:name="com.example.moviedb1.ListFragment"
+        android:label="Now Playing"
+        tools:layout="@layout/fragment_list" >
+        <action
+            android:id="@+id/action_nowPlaying_to_detail"
+            app:destination="@id/detail" />
+        <action
+            android:id="@+id/action_nowPlaying_to_saved"
+            app:destination="@id/saved" />
+    </fragment>
+    <fragment
+        android:id="@+id/detail"
+        android:name="com.example.moviedb1.DetailFragment"
+        android:label="Movie"
+        tools:layout="@layout/fragment_detail" >
+        <action
+            android:id="@+id/action_detail_to_review"
+            app:destination="@id/review" />
+    </fragment>
+    <fragment
+        android:id="@+id/review"
+        android:name="com.example.moviedb1.ReviewFragment"
+        android:label="Write Review"
+        tools:layout="@layout/fragment_review" >
+        <action
+            android:id="@+id/action_review_to_detail"
+            app:destination="@id/detail" />
+    </fragment>
+    <fragment
+        android:id="@+id/saved"
+        android:name="com.example.moviedb1.SavedFragment"
+        android:label="Saved Movies"
+        tools:layout="@layout/fragment_saved" >
+        <action
+            android:id="@+id/action_saved_to_detail"
+            app:destination="@id/detail" />
+    </fragment>
+    <action
+        android:id="@+id/action_global_saved"
+        app:destination="@id/saved" />
+    <action
+        android:id="@+id/action_global_nowPlaying"
+        app:destination="@id/nowPlaying" />
+</navigation>

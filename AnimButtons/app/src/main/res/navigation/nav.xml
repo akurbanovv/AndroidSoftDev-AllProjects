@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.animbuttons.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment_to_blueFragment"
+            app:destination="@id/blueFragment"
+            app:enterAnim="@animator/slide_in_left"
+            app:exitAnim="@animator/slide_out_left" />
+        <action
+            android:id="@+id/action_mainFragment_to_greenFragment"
+            app:destination="@id/greenFragment"
+            app:enterAnim="@animator/slide_in_down"
+            app:exitAnim="@animator/slide_out_down" />
+        <action
+            android:id="@+id/action_mainFragment_to_redFragment"
+            app:destination="@id/redFragment"
+            app:enterAnim="@animator/slide_in_right"
+            app:exitAnim="@animator/slide_out_right" />
+        <action
+            android:id="@+id/action_mainFragment_to_yellowFragment"
+            app:destination="@id/yellowFragment"
+            app:enterAnim="@animator/slide_in_up"
+            app:exitAnim="@animator/slide_out_up" />
+    </fragment>
+    <fragment
+        android:id="@+id/redFragment"
+        android:name="com.example.animbuttons.RedFragment"
+        android:label="fragment_red"
+        tools:layout="@layout/fragment_red" />
+    <fragment
+        android:id="@+id/blueFragment"
+        android:name="com.example.animbuttons.BlueFragment"
+        android:label="fragment_blue"
+        tools:layout="@layout/fragment_blue" />
+    <fragment
+        android:id="@+id/yellowFragment"
+        android:name="com.example.animbuttons.YellowFragment"
+        android:label="fragment_yellow"
+        tools:layout="@layout/fragment_yellow" />
+    <fragment
+        android:id="@+id/greenFragment"
+        android:name="com.example.animbuttons.GreenFragment"
+        android:label="fragment_green"
+        tools:layout="@layout/fragment_green" />
+</navigation>
