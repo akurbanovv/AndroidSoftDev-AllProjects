@@ -32,12 +32,6 @@ class MainFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-
-
-        // red.setOnClickListener {
-
-        //}
-
         red.setOnClickListener {
             findNavController().navigate(R.id.action_mainFragment_to_redFragment)
         }
@@ -84,11 +78,5 @@ class MainFragment : Fragment() {
             setTarget(yellow)
             start()
         }
-
-
-
-
     }
-
-
-    }
+}

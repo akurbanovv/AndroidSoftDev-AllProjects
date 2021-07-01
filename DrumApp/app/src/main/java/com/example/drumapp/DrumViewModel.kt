@@ -41,6 +41,7 @@ class DrumViewModel(application: Application) : AndroidViewModel(application) {
             override fun onDataChange(p0: DataSnapshot) {
                 records.value!!.clear()
 
+                print("gets here")
                 p0.child("recordings").children.forEach { user ->
                     user.children.forEach { recordings ->
                         recordings.getValue(Recording::class.java)?.let { recording ->
